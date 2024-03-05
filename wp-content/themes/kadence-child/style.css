@@ -4,16 +4,36 @@
 	}
 }
 
+#home-sec-1-container {
+	position: relative;
+background: #E3D9D0;
+border-bottom-left-radius: 50% 20%;
+border-bottom-right-radius: 50% 20%;
+border-bottom: 10px solid #D6CCC4;
+}
+
 .elementor-size-default {
 	display: flex;
 	margin-top: 100px;
 }
 
+#main-header .site-container {
+	max-width: 100%;
+	padding: 0;
+}
+
+#home-sec-1-container .wp-image-30  {
+	width: 100%;
+	height: 110vh;
+}
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: 'Syne', sans-serif;
+	
+
 }
 
 .container {
@@ -64,19 +84,30 @@ body{
 	z-index: 10; /* S'assurer que le texte reste au-dessus de l'image */
 }
 
+.custom-logo {
+	margin-left: 13px;
+}
+
 .fraise .pamplemousse .framboise .citron {
-	position: absolute; /* Position absolue par rapport au parent relatif */
-	top: 55%; /* Centrage vertical */
-	left: 40%; /* Centrage horizontal */
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	transform: translate(-50%, -50%); /* Décalage précis pour un centrage parfait */
-	color: #FFF; /* Couleur du texte */
-	size: 48px; /* Taille du texte */
-	font-family: Syne;
-	font-weight: 800;
-	font-weight: bold; /* Gras pour le texte */
-	z-index: 10; /* S'assurer que le texte reste au-dessus de l'image */
+	gap: 20px; /* Espacement entre les images */
+	position: relative; /* Position relative pour les enfants absolus */
+}
+
+.wp-image-29 {
+	position: relative;
+}
+
+.fraise {
+	position: absolute;
+	right: -50px;
+	top: 50px;
+}
+
+#primary-menu {
+	margin-left: 100px;
 }
 
 .container-fraise{
@@ -105,11 +136,6 @@ body{
 	background-repeat: no-repeat
 }
 
-#home-sec-1-container{
-	border-bottom-left-radius: 10%;
-	border-bottom-right-radius: 10%;
-	border-bottom: 30px solid #E3D9D0;
-}
 
 #card-1{
 	width: 393px;
@@ -239,6 +265,80 @@ label {
 .modif-size{
 	width: 360px !important;
 }
+@media screen and (min-width: 768px) and (max-width: 939px) {
+.elementor-button-text {
+	width: 198px;
+	border-radius: 5px;
+	
+}
+}
+
+
+.elementor-8 .elementor-element.elementor-element-99a74a4 {
+	top: -700px;
+
+}
+
+.elementor-heading-title {
+	display: flex;
+	justify-content: center;
+	margin-top: 30px;
+}
+
+
+.elementor-8 .elementor-element.elementor-element-28ba3f8 {
+	height: 900px;
+}
+
+.elementor-button {
+	top: -500px;
+	position: relative;
+	top: 800px;
+}
+
+.elementor-8 .elementor-element.elementor-element-2c8d6ad .elementor-button {
+	width: 200px;
+	border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 939px) {
+    body {
+        width: auto;
+    }
+
+    .elementor-size-default {
+        margin-top: 50px;
+    }
+
+    #home-sec-1-container, .container-fraise, .container-pamplemousse, .container-framboise, .container-citron, #card-1, #card-2, #card-3, #card-4 {
+        width: 80%;
+        height: auto;
+    }
+
+    .container, .directionRow, .all-cards, .contant-info {
+        width: 80%;
+    }
+
+    .directionRow {
+        gap: 50px;
+    }
+
+    .contant-info, .delivery-info-form, .vos-infos-title {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .modif-size, .contact-form, .form-input, .form-textarea, .form-button {
+        width: 100%;
+    }
+}
+
+
+.wp-image-461 .wp-image-480 .wp-image-481 {
+	object-fit: cover;
+}
+
 
 .vos-infos-title h4{
 	color: white;
@@ -269,6 +369,22 @@ label {
 	width: 144px;
 }
 
+#menu-item-49 {
+	width: 236px;
+}
+
+#primary-menu #menu-item-50 a {
+	font-size: 16px;
+	font-weight: 400;
+	margin-left: 7px;
+	margin-right: 7px;
+}
+
+.menu-item-50 {
+	font-size: 16px;
+	margin-left: 7px;
+	margin-right: 27px;
+}
 
 /************************ Nous Rencontrer page ************************/
 
@@ -313,6 +429,10 @@ label {
   
   .form-input, .form-textarea {
 	width: 100%; /* Tous les champs de formulaire ont la même largeur */
+  }
+
+  .form-input {
+	border-radius: 10px;
   }
   
   .form-button {
