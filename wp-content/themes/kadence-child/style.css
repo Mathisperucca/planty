@@ -22,6 +22,11 @@ border-bottom: 10px solid #D6CCC4;
 	padding: 0;
 }
 
+.pamplemousse{
+	word-wrap: break-word !important;
+	text-transform:uppercase
+}
+
 #home-sec-1-container .wp-image-30  {
 	width: 100%;
 	height: 110vh;
@@ -88,22 +93,28 @@ body{
 	margin-left: 13px;
 }
 
-.fraise .pamplemousse .framboise .citron {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px; /* Espacement entre les images */
-	position: relative; /* Position relative pour les enfants absolus */
+#fraise {
+	position: absolute;
+	left: 0%;
+	top: 10%;
 }
 
-.wp-image-29 {
+#imagefraise {
 	position: relative;
 }
 
-.fraise {
-	position: absolute;
-	right: -50px;
-	top: 50px;
+#name, #email {
+	border-radius: 7px;
+	height: 71px;
+}
+
+#message {
+	height: 237px;
+	border-radius: 7px;
+}
+
+.form-button {
+	border-radius: 7px;
 }
 
 #primary-menu {
@@ -301,7 +312,7 @@ label {
 	border-radius: 5px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 939px) {
+@media screen and (min-width: 768px) and (max-width: 1440px) {
     body {
         width: auto;
     }
@@ -363,6 +374,29 @@ label {
 	font-weight: 400;
 	font-size: 15px;
 	line-height:37px;
+}
+
+#fraise {
+	position: relative;
+    font-size: 32px; /* Adjust the font size as needed */
+    color: white; /* This will make the text white */
+    font-weight: bold; /* Makes the font bold */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    display: flex;
+    justify-content: center; 
+}
+
+#fraise .wp-image-29 {
+	content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8; /* Adjust the opacity as needed */
+    z-index: -1;
 }
 
 #fraise-title{
@@ -588,7 +622,7 @@ label {
 
 }
 
-@media (max-width: 767px){
+@media screen and (max-width: 939px){
 		/* Header */
 		.site-header-item{
 			margin-left: 10px;
@@ -611,12 +645,11 @@ label {
 			margin-right: -900px;
 		}
 
-		/* .site-main-header-inner-wrap .site-header-main-section-left{
-			background-color: red;
+		.site-main-header-inner-wrap .site-header-main-section-left{
 			width: 100%;
 			display: flex;
 			align-items: center;
-		} */
+		} 
 
 		/* Background flower decoration */
 		#flower-contact-form{
