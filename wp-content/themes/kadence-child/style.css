@@ -24,7 +24,8 @@ border-bottom: 10px solid #D6CCC4;
 
 .pamplemousse{
 	word-wrap: break-word !important;
-	text-transform:uppercase
+	text-transform:uppercase 
+	
 }
 
 #home-sec-1-container .wp-image-30  {
