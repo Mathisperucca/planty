@@ -1,54 +1,52 @@
-@media screen and (min-width: 1440px) {
-	body {
-	  width: 1440px;
-	}
-}
-
 #home-sec-1-container {
-	position: relative;
-background: #E3D9D0;
-border-bottom-left-radius: 50% 20%;
-border-bottom-right-radius: 50% 20%;
-border-bottom: 10px solid #D6CCC4;
+    position: relative;
+    background: #E3D9D0;
+    border-bottom-left-radius: 50% 20%;
+    border-bottom-right-radius: 50% 20%;
+    border-bottom: 10px solid #D6CCC4;
+    width: 100%;
 }
 
+/* Styles spécifiques pour les écrans jusqu'à 320px */
+@media only screen and (max-width: 320px) {
+    #home-sec-1-container {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+    }
+}
+
+/* Styles supplémentaires pour rendre la page responsive */
 .elementor-size-default {
-	display: flex;
-	margin-top: 100px;
+    display: flex;
+    margin-top: 100px;
 }
 
 #main-header .site-container {
-	max-width: 100%;
-	padding: 0;
+    max-width: 100%;
+    padding: 0;
 }
 
-.pamplemousse{
-	word-wrap: break-word !important;
-	text-transform:uppercase 
-	
+#home-sec-1-container .wp-image-30 {
+    width: 100%;
+    height: 110vh;
 }
 
-#home-sec-1-container .wp-image-30  {
-	width: 100%;
-	height: 110vh;
-}
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     font-family: 'Syne', sans-serif;
-	
-
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* ou row, selon votre disposition */
+    flex-direction: column;
     width: 100vw;
     height: 100vh;
-    justify-content: center; /* aligne les enfants horizontalement au centre */
-    align-items: center; /* aligne les enfants verticalement au centre */
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -69,9 +67,18 @@ body{
 	margin: 0 auto;
 }
 
-.pamplemousse {
-	
+#inner-wrap .elementor-element-27fc141 {
+	width: 85%;
+  margin: auto;
 }
+
+#inner-wrap .elementor-element-9750188 {
+	position: relative;
+  background: #E3D9D0;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
 
 /****************** HOME PAGE  *****************************/
 .framboise .citron{
@@ -83,21 +90,92 @@ body{
 	align-items: center;
 	transform: translate(-50%, -50%); /* Décalage précis pour un centrage parfait */
 	color: #FFF; /* Couleur du texte */
-	size: 48px; /* Taille du texte */
+	font-size: 48px; /* Taille du texte */
 	font-family: Syne;
 	font-weight: 800;
 	font-weight: bold; /* Gras pour le texte */
 	z-index: 10; /* S'assurer que le texte reste au-dessus de l'image */
 }
 
+@media screen and (max-width: 360px){
+	.e-con-inner {
+		width: 310px;
+	}
+	
+}
+
 .custom-logo {
 	margin-left: 13px;
 }
 
-#fraise {
+#inner-wrap #fraise {
 	position: absolute;
-	left: 0%;
-	top: 10%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.linkadmin a {
+	text-decoration: none;
+	margin-right: 30px;
+	color: black;
+}
+
+
+#inner-wrap .elementor-element-ab119d1, #inner-wrap .elementor-element-6102891, #inner-wrap .elementor-element-545d16d, #inner-wrap .elementor-element-6f4252d {
+	position: relative;
+	width: 393px;
+}
+
+#inner-wrap .elementor-element-dc436f0 {
+	padding: 0;
+}
+
+.elementor-page-21 #wrapper #inner-wrap   {
+	background-color: #3B8E46;
+}
+
+#inner-wrap {
+	background-color: white;
+}
+
+@media screen and (max-width: 1380px)  {
+
+	#inner-wrap .elementor-21 {
+		max-width: 70%;
+	}
+}
+
+@media screen and (max-width: 1200px)  {
+	#inner-wrap .elementor-21 {
+		max-width: 90%;
+	}
+}
+
+.elementor-21 {
+	margin: auto;
+	max-width: 60%;
+}
+
+.site-footer {
+	height: 60px;
+}
+
+#colophon .site-middle-footer-inner-wrap {
+	padding-top: 0;
+	padding-bottom: 0;
+	grid-template-columns: none; 
+}
+
+#colophon .site-footer-row {
+	display: initial;
+}
+
+@media screen and (max-width: 768px) {
+#inner-wrap .elementor-element-ab119d1 {
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
 }
 
 #imagefraise {
@@ -256,8 +334,16 @@ label {
 	line-height: 24px;
 }
 
-.vos-infos-title{
+#inner-wrap .delivery input {
+width: 383px;
+}
+
+#inner-wrap .vos-infos-title input {
 	width: 383px;
+}
+
+.vos-infos-title{
+	width: 50%;
 	border-right: solid 1px white;
 	padding-right:45px;
 	margin-bottom: 40px !important;
@@ -268,6 +354,15 @@ label {
 .delivery-info-form{
 	margin-top: 40px;
 }
+
+#inner-wrap .delivery {
+	width: 50%;
+}
+
+#delivery_adresse, #postal_code, #mail, #city {
+	border-radius: 7px;
+	height: 71px;
+}
 .delivery{
 	padding-left: 25px !important;
 }
@@ -275,7 +370,7 @@ label {
 	margin-bottom: 20px;
 }
 .modif-size{
-	width: 360px !important;
+
 }
 @media screen and (min-width: 768px) and (max-width: 939px) {
 .elementor-button-text {
@@ -293,7 +388,6 @@ label {
 
 .elementor-heading-title {
 	display: flex;
-	justify-content: center;
 	margin-top: 30px;
 }
 
@@ -302,10 +396,28 @@ label {
 	height: 900px;
 }
 
-.elementor-button {
-	top: -500px;
-	position: relative;
-	top: 800px;
+
+
+
+.wp-image-28 {
+	margin-top: -47px;
+}
+
+
+
+.wp-image-39 {
+	width: 100%;
+}
+
+
+#inner-wrap .e-con-inner {
+max-width: 100%;
+margin: 0;
+}
+
+.e-con-inner {
+	max-width: 70%;
+	margin: auto;
 }
 
 .elementor-8 .elementor-element.elementor-element-2c8d6ad .elementor-button {
@@ -313,23 +425,18 @@ label {
 	border-radius: 5px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-    body {
-        width: auto;
-    }
-
     .elementor-size-default {
         margin-top: 50px;
     }
 
     #home-sec-1-container, .container-fraise, .container-pamplemousse, .container-framboise, .container-citron, #card-1, #card-2, #card-3, #card-4 {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
 
-    .container, .directionRow, .all-cards, .contant-info {
-        width: 80%;
-    }
+	.elementor-element-7d11c08 {
+		width: 100%;
+	}
 
     .directionRow {
         gap: 50px;
@@ -338,20 +445,21 @@ label {
     .contant-info, .delivery-info-form, .vos-infos-title {
         flex-direction: row;
         justify-content: space-between;
-        width: 100%;
     }
 
     .modif-size, .contact-form, .form-input, .form-textarea, .form-button {
         width: 100%;
     }
-}
+
 
 
 .wp-image-461 .wp-image-480 .wp-image-481 {
 	object-fit: cover;
 }
 
-
+.commander {
+	order: 1;
+}
 .vos-infos-title h4{
 	color: white;
 	font-family: Syne;
@@ -375,17 +483,80 @@ label {
 	font-weight: 400;
 	font-size: 15px;
 	line-height:37px;
+	border-radius: 5px;
 }
 
+#inner-wrap .elementor-element-1c20c55 {
+	width: 193px;
+	height: 128px;
+}
+
+
 #fraise {
-	position: relative;
-    font-size: 32px; /* Adjust the font size as needed */
+	position: absolute;
+    font-size: 200%; /* Adjust the font size as needed */
     color: white; /* This will make the text white */
     font-weight: bold; /* Makes the font bold */
     text-transform: uppercase; /* Transforms the text to uppercase */
     display: flex;
     justify-content: center; 
+	z-index: 10;
+	top: 50%;
 }
+
+#pamplemousse {
+	position: absolute;
+    font-size: 100%; /* Adjust the font size as needed */
+    color: white; /* This will make the text white */
+    font-weight: bold; /* Makes the font bold */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.background {
+	background: #E3D9D0;
+	border-bottom-left-radius: 50% 50%;
+	border-bottom-right-radius: 50% 50%;
+border-radius: 15px;
+}
+
+#citron {
+	position: absolute;
+    font-size: 100%; /* Adjust the font size as needed */
+    color: white; /* This will make the text white */
+    font-weight: bold; /* Makes the font bold */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    display: flex;
+    justify-content: center; 
+	z-index: 10;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 135px;
+}
+
+#framboise {
+	position: absolute;
+    font-size: 100%;; /* Adjust the font size as needed */
+    color: white; /* This will make the text white */
+    font-weight: bold; /* Makes the font bold */
+    text-transform: uppercase; /* Transforms the text to uppercase */
+    display: flex;
+    justify-content: center; 
+	z-index: 10;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.boise {
+	position: absolute;
+	z-index: 10;
+	top: 60%;
+}
+
 
 #fraise .wp-image-29 {
 	content: '';
@@ -400,22 +571,45 @@ label {
     z-index: -1;
 }
 
-#fraise-title{
-	width: 144px;
-}
 
 #menu-item-49 {
 	width: 236px;
 }
 
+#inner-wrap .elementor-element-55951e6  {
+	width: 700px;
+	z-index: 10;
+	margin: auto;
+}
+
+#inner-wrap .elementor-element-d27e27f {
+	z-index: 10;
+}
+
+#inner-wrap .elementor-element-1fb36f0 {
+	width: 350px;
+  right: 0;
+  left: initial;
+}
+
+.elementor-element-717e3eb {
+	background-color: #E3D9D0;
+}
+
+#inner-wrap .elementor-element-c398f07 {
+	left: 0;
+  z-index: 0;
+}
+
 #primary-menu #menu-item-50 a {
+	color: black;
 	font-size: 16px;
 	font-weight: 400;
 	margin-left: 7px;
 	margin-right: 7px;
 }
 
-.menu-item-50 {
+.menu-item-50 a {
 	font-size: 16px;
 	margin-left: 7px;
 	margin-right: 27px;
@@ -480,7 +674,7 @@ label {
 	color: white;
   }
   .envoyer:hover{
-	background-attachment: #E0B9B4;
+	background-color: #E0B9B4;
   }
   #message{
 	height: 237px;
@@ -493,6 +687,8 @@ label {
   }
 
 
+
+  
 /***************** Responive design  **************************/
 /* @media tablette */
 
@@ -531,14 +727,12 @@ label {
 }
 
 @media (min-width:940px) and (max-width: 1023px){
-	/* #votre-commande{
+	#votre-commande{
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
-	} */
-	.all-cards{
-		margin-top: 100px !important;
-	}
+		
+	} 
 }
 @media (min-width:1024px) and (max-width: 1440px){
 	.all-cards{
@@ -546,19 +740,42 @@ label {
 	}
 }
 
-
-
-/* @media portable */
-@media screen and (max-width: 939px){
-	.contact-form{
-		margin-top: 40px;
-		display: flex;
-		flex-direction: column;
-		width: 380px;
-		margin: 0 auto; /* Centre le formulaire sur la page */
-		justify-content: center; /* Centre horizontalement le bouton */
-		gap: 20px;
+@media (max-width:1024px) {
+	#wrapper #inner-wrap .modif-size { 
+		width: 100%;
 	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 1400px) {
+	.contant-info {
+		width: 100%;
+	}
+	#inner-wrap .elementor-21 .elementor-element.elementor-element-d222d09 h1 {
+		font-size: 20px;
+	}
+
+	.elementor-21 .elementor-element.elementor-element-1599a0e .elementor-heading-title h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.vos-infos-title {
+		justify-content: center;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+	.contact-form {
+		  margin-top: 20px;
+		  display: flex;
+		  flex-direction: column;
+		  width: 100%;
+		  margin: 0 auto;
+		  justify-content: center;
+		  gap: 10px;
+	  }
 
 	.directionRow {
 		display: flex;
@@ -577,10 +794,10 @@ label {
 	.contant-info{
 		display: flex;
 		flex-direction: column;
-		width: 360px;
+		width: 500%;
 	}
 	#order-button{
-		margin-top: -50px;
+		margin-top: 50px;
 	}
 	.vos-infos-title{
 		border-right: none;
@@ -618,8 +835,11 @@ label {
 	.site-header-item{
 		margin-left: 110px;
 	}
+	.quantity {
+		margin-top: 50px;
+	}
 	
-
+.
 
 }
 
@@ -658,4 +878,96 @@ label {
 		}
 }
 
+#inner-wrap .elementor-21 .elementor-element.elementor-element-b8abe77 {
+	min-height: auto;
+}
 
+#title-commander {
+	margin-top: 45px;
+}
+
+#inner-wrap #votre-commande {
+	border-bottom: 0;
+	padding-top: 35px;
+	width: 100%;
+}
+
+
+
+#inner-wrap .elementor-element-aecbfd4, #inner-wrap .elementor-element-06b666e, #inner-wrap .elementor-element-aecbfd4, #inner-wrap .elementor-element-7fdbf4e { 
+	width: 193px;
+	height: 128px;
+}
+
+#inner-wrap .elementor-element-adeb831 {
+border-bottom: solid 1px white;
+padding-bottom: 50px;
+}
+
+#inner-wrap .elementor-element-717e3eb {
+	position: relative;
+  background: #E3D9D0;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+  border-bottom: 10px solid #D6CCC4;
+}
+
+.elementor-8 .elementor-element.elementor-element-5ac51cd > .elementor-widget-container {
+	
+}
+
+/*TABLETTE*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	#inner-wrap .elementor-element-2ea4895  .e-con-inner {
+		width: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.contant-info p {
+		width: 100%;
+	}
+	#inner-wrap .elementor-element-1c20c55, #inner-wrap .elementor-element-aecbfd4, #inner-wrap .elementor-element-06b666e, #inner-wrap .elementor-element-7fdbf4e {
+		width: 160px;
+	}
+	#inner-wrap .elementor-element-9d9910f h3 {
+		font-size: 15px;
+	}
+	#inner-wrap .elementor-21 .elementor-element.elementor-element-1599a0e > .elementor-widget-container {
+		margin: 0;
+		margin-bottom: 15px;
+	}
+	#inner-wrap .elementor-21 .elementor-element.elementor-element-d222d09 > .elementor-widget-container {
+		margin: 0;
+	}
+	#inner-wrap .img-branch-team {
+		display: none;
+	}
+	#inner-wrap .container-photo {
+		margin-bottom: 50px;
+	}
+
+}
+
+@media screen and (max-width: 767px) {
+
+	#inner-wrap .wp-image-29 {
+		max-width: 100%;
+	}
+	#inner-wrap .elementor-21 .elementor-element.elementor-element-1599a0e .elementor-heading-title {
+		font-size: 25px;
+    display: flex;
+    justify-content: center;
+	}
+
+	#inner-wrap .elementor-21 .elementor-element.elementor-element-d222d09 > .elementor-widget-container {
+		margin: 0;
+	}
+	#inner-wrap #votre-commande {
+		margin-bottom: 15px;
+	}
+}
+
+#imagefruitcss {
+	margin: auto;
+}

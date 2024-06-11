@@ -20,25 +20,21 @@ function child_enqueue_styles() {
 
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles' ); 
 
-if (current_user_can('administrator')):
-	show_admin_bar(true);
-  endif;
+add_filter( 'wp_nav_menu_items','add_admin_link', 10, 2 );
 
+function add_admin_link( $items, $args ) {
 
+    if (is_user_logged_in() && $args->theme_location == 'primary') {
 
-function add_admin_link($items) {
-  if (current_user_can( 'manage_options' )
-  
-  ) {
-      $items_array = explode('</li>', $items);
-        $items_array[2]=$items_array[1];
-        $items_array[1] = '<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-50"><a href="'. get_admin_url() .'">Admin</a>';
-        $items = implode('</li>', $items_array);
+        $items .= '<li class="linkadmin"><a href="'. get_admin_url() .'">Admin</a></li>';
+
     }
+
     return $items;
-    
+
 }
-add_filter( 'wp_nav_menu_items', 'add_admin_link', 10, 2 );
+
+
 
 
 
